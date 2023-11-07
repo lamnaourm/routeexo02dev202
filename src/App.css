@@ -1,15 +1,63 @@
+.container {
+  background-color: whitesmoke;
+}
+
 .list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-
+  margin: 10px 50px;
 }
 
 .article {
+  background-color: white;
   padding: 10px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .article img {
   width: 100%;
+  height: 250px;
 }
+
+.article h3 {
+  font-size: 14px;
+}
+
+
+.article button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.details {
+  margin: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+.details div {
+  flex-grow: 1;
+}
+
+.details img {
+  width: 40%;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+

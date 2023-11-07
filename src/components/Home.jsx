@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className='list'>
             {articles.map(article =>
-                <div className='article'>
+                <div key={article.id} className='article'>
                     <img src={article.image} alt={article.title} />
                     <h3>{article.title}</h3>
                     <button onClick={() => handleClick(article.id)}>Details article</button>
